@@ -3,11 +3,11 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         Aaron Wilkin, their colleagues, and Haozhe Wu
+"""  # done PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
-# TODO: 2.
+# done
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -18,7 +18,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 ###############################################################################
 
 import rosegraphics as rg
-
+import math
 
 def main():
     """
@@ -26,9 +26,8 @@ def main():
     You write the tests per the _TODO_s below.
     """
 
-
 ###############################################################################
-# TODO: 3a.  Define a function immediately below this _TODO_.
+# done  Define a function immediately below this _TODO_.
 #   It takes two arguments that denote, for a right triangle,
 #   the lengths of the two sides adjacent to its right angle,
 #   and it returns the length of the hypotenuse of that triangle.
@@ -36,18 +35,27 @@ def main():
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 3b.  In main, CALL your function and print the returned value,
+# done  In main, CALL your function and print the returned value,
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
 
-
+def hypotenuse(side1, side2):
+    return math.sqrt((side1**2)+(side2**2))
+answer = hypotenuse(3,4)
+print(answer)
 ###############################################################################
-# TODO: 4a.  Define a function immediately below this _TODO_.
+# done  Define a function immediately below this _TODO_.
 #   It takes two arguments:
 #     -- a string that represents a color (e.g. 'red')
 #     -- a positive integer that represents the thickness of a Pen.
 #
+pen=rg.Pen('red',10)
+answer2=hypotenuse(1,1)
+answer3=hypotenuse(5,12)
+print(answer2)
+print(answer3)
+
 #   The function should do the following (in the order listed):
 #     a. Constructs a TurtleWindow.
 #     b. Constructs two SimpleTurtles, where:
@@ -65,14 +73,14 @@ def main():
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 4b.  In main, CALL your function at least TWICE (with different values
+# done  In main, CALL your function at least TWICE (with different values
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
 
 
 ###############################################################################
-# TODO: 5.
+# done
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
 #
 #   As a reminder, here is how you should do so:
